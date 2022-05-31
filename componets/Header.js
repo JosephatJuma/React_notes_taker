@@ -1,19 +1,10 @@
-import React from "react";
-import Button from "./Button";
-
-const Header = ({ title, onAdd, showAdd }) => {
-  // const btnClicked = () => {
-  //   console.log("button clicked");
-  //   //alert("clicked");
-  // };
+const Header = ({ title }) => {
   return (
     <div className="header">
-      <h1>{title}</h1>
-      <Button
-        text={showAdd ? "Close" : "Add note"}
-        color={showAdd ? "black" : "green"}
-        onClick={onAdd}
-      />
+      <h2>{title}</h2>
+      <a href="index.html">
+        <img src="logo.png" alt="Logo" className="logo" />
+      </a>
     </div>
   );
 };
