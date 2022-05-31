@@ -17,7 +17,7 @@ const AddNote = ({ onAdd }) => {
   const submitNote = (e) => {
     e.preventDefault();
     if (!name) {
-      alert("Please enter the title of the task");
+      alert("Please enter the title of the note!");
       return;
     }
     onAdd({ name, text, date });
